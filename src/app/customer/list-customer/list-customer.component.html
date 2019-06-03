@@ -1,0 +1,8 @@
+<h3>
+  List User LazyLoad Component
+</h3>
+<ol>
+  <li *ngFor="let user of users | async">
+    {{user?.name}}
+  </li>
+</ol>

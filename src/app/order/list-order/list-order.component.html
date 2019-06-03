@@ -1,0 +1,8 @@
+<h4>
+  List Orders LazyLoad Component {{ orderLength }} record
+</h4>
+<ol>
+  <li *ngFor="let order of orders | async">
+    {{ order?.title }}
+  </li>
+</ol>
